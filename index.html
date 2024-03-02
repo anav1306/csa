@@ -1,27 +1,43 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Hello</title>
-    </head>
-    <body>
-        <table>
-            Name variations
-            <tr>
-              <th>Variation</th>
-              <th>Result</th>
-            </tr>
-            <tr>
-              <td>Number of characters</td>
-              <td>1</td>
-              <td>First character</td>
-            </tr>
-            <tr>
-              <td>Centro comercial Moctezuma</td>
-              <td>Francisco Chang</td>
-              <td>Mexico</td>
-              
-            </tr>
-          </table> 
-          
-    </body>
+<html lang="en">
+  <head>
+      <title>Weather Webpage</title>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+      <script src="https://cdn.tailwindcss.com" ></script>
+      <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                Bebas: ["Bebas Nueue", "sans-serif"],
+                Montserrat: ["Montserrat", "sans-serif"],
+              }
+            }
+          }
+        }
+      </script>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+      
+  </head>
+  <body class="h-screen bg-amber-300 p-10">
+    <div class="bg-amber-400 h-[300px] W-[300px]">
+      <form>
+        <label hidden for="search_bar">Search Bar</label>
+        <div class="relative">
+        <div class="absolute inset-y-0 ps-3 flex items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+          </svg>
+        </div>
+        <input class="focus:ring-2 focus:ring-black focus:outline-none rounded shadow-lg"/>
+        </div>
+      </form>
+    </div>
+
+  </body>
+  <script src="main.js"></script>
 </html>
